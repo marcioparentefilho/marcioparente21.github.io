@@ -1,0 +1,119 @@
+.page {
+    display: table-column;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: #3e3e3e;
+    display: table;
+
+    //OUTLINE
+    //outline: auto;
+    //outline-color: rgb(251, 51, 84);
+    //outline-width: auto;
+
+}
+
+.top-tag {
+    bottom: auto;
+    top: 35px;
+}
+
+.tags {
+    color: #ffd700;
+    opacity: 0.6;
+    position: absolute;
+    bottom: 0;
+    left: 120px;
+    font-size: 18px;
+    font-family: 'La Belle Aurore';
+}
+
+.bottom-tag-html {
+    margin-left: -40px;
+}
+
+
+
+//.about-page,
+.contact-page,
+.bot-page {
+    width: 100%;
+
+    .text-zone {
+        @media (max-width: 768px) {
+            left: 0%;
+
+        }
+
+        position: absolute;
+        left: 10%;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 80%; // Changed width to 80% to ensure proper spacing
+        max-width: 1000px; // Added max-width to prevent stretching too far
+        padding: 20px; // Added padding for better spacing
+        display: block; // Changed to block for proper flow
+        max-height: 90%;
+
+        h1 {
+            font-size: 53px;
+            font-family: 'Coolvetica';
+            color: #fff;
+            font-weight: 400;
+            margin-top: 0;
+            position: relative;
+            margin-bottom: 40px;
+            left: 10px;
+            animation: pulse 1s;
+        }
+
+        &::before {
+            content: '<h1>';
+            font-family: 'La Belle Aurore';
+            font-size: 18px;
+            position: absolute;
+            margin-top: -10px;
+            left: -10px;
+            opacity: 0.6;
+            line-height: 18px;
+        }
+
+        &::after {
+            content: '<h1/>';
+            font-family: 'La Belle Aurore';
+            font-size: 18px;
+            line-height: 18px;
+            position: absolute;
+            left: -30px;
+            bottom: -20px;
+            margin-left: 20px;
+            opacity: 0.6;
+        }
+    }
+
+    p {
+        font-size: 13px;
+        color: #fff;
+        font-family: sans-serif;
+        font-weight: 300;
+        width: auto; // Changed width to auto
+        animation: pulse 1s;
+
+        &:nth-of-type(1) {
+            animation-delay: 1.1s;
+        }
+
+        &:nth-of-type(2) {
+            animation-delay: 1.2s;
+        }
+
+        &:nth-of-type(3) {
+            animation-delay: 1.3s;
+        }
+
+        &:nth-of-type(4) {
+            animation-delay: 1.4s;
+        }
+    }
+
+}
